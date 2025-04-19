@@ -26,7 +26,7 @@ client.on(Events.InteractionCreate, async interaction => {
       await interaction.reply(res.data);
     } catch (err) {
       console.error('❌ Error fetching PR:', err.message);
-      await interaction.reply('❌ Could not fetch personal record.');
+      await interaction.reply('❌ Could not fetch a personal record.');
     }
   }
 });
